@@ -7,6 +7,7 @@ module.exports = {
                 "M-blue": "#A3E6F4",
                 "M-pink": "#F4A2AB",
                 "M-black": "#3F3C41",
+                "M-white": "#fffffe",
             },
         },
     },
