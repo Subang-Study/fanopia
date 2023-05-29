@@ -4,7 +4,7 @@ import Header from "./Header";
 
 type Props = {};
 
-const Layout = (props: Props) => {
+const HeaderLayout: React.FC<Props> = props => {
     return (
         <>
             <Header />
@@ -13,4 +13,4 @@ const Layout = (props: Props) => {
     );
 };
 
-export default Layout;
+export default HeaderLayout;
