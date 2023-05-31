@@ -11,8 +11,10 @@ export default function Button({ className, btnType, onClick, children }: IProps
     const btnStyle = {
         "fill-pink": "bg-M-pink text-M-white",
         "fill-blue": "bg-M-blue text-M-white",
-        "empty-pink": "bg-transparent border-2 border-M-pink text-M-pink",
-        "empty-blue": "bg-transparent border-2 border-M-blue text-M-blue",
+        "empty-pink":
+            "bg-transparent border-2 border-M-pink text-M-pink transition-color duration-300 hover:bg-M-pink hover:text-M-white",
+        "empty-blue":
+            "bg-transparent border-2 border-M-blue text-M-blue transition-color duration-300 hover:bg-M-blue hover:text-M-white",
         "fill-gray": "bg-[#EBEBEB] text-[#C6C6C6]",
     };
 

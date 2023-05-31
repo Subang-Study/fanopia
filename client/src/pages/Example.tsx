@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../components/basic/Button";
+import ProfileImg from "../components/basic/ProfileImg";
+import CategoryList from "../components/main/CategoryList";
 
 export default function Example() {
     return (
@@ -8,6 +10,8 @@ export default function Example() {
                 Button
             </Button>
             <div className="w-full h-[3.5rem] gradation-color rounded-xl"></div>
+            <ProfileImg className="w-20" />
+            <CategoryList />
         </div>
     );
 }
