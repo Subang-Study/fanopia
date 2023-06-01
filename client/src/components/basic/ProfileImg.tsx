@@ -1,5 +1,6 @@
 import React from "react";
 import DefaultImg from "../../assets/userDefaultImg.svg";
+import BorderDiv from "./BorderDiv";
 import { GradientHeart } from "../../assets/Icons";
 import { getDefaultSrc } from "../../utils/errors";
 
@@ -19,20 +20,21 @@ interface IProfileImg {
 
 export default function ProfileImg({ className, isSubscribed, src }: IProfileImg) {
     return (
-        <div className={`gradation-color rounded-full aspect-square p-[3px]  ${className}`}>
-            <div className="relative w-full overflow-hidden border-2 rounded-full aspect-square border-M-white">
-                <img
-                    className={`w-full aspect-square rounded-full user-image `}
-                    src={src ? src : DefaultImg}
-                    alt="userProfile"
-                    onError={e => getDefaultSrc(e, DefaultImg)}
-                />
-                {!!isSubscribed && (
-                    <div className="rounded-full cover-shade">
-                        <GradientHeart className="w-1/2" />
-                    </div>
-                )}
-            </div>
-        </div>
+        <BorderDiv
+            outer={`${className} rounded-full aspect-square  p-[3px] `}
+            inner="relative border-2 rounded-full border-M-white bg-transparent"
+        >
+            <img
+                className={`w-full rounded-full aspect-square user-image`}
+                src={src ? src : DefaultImg}
+                alt="userProfile"
+                onError={e => getDefaultSrc(e, DefaultImg)}
+            />
+            {!!isSubscribed && (
+                <div className="rounded-full cover-shade">
+                    <GradientHeart className="w-1/2" />
+                </div>
+            )}
+        </BorderDiv>
     );
 }

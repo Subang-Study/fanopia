@@ -14,9 +14,9 @@ interface ISearchInputProps {
 export default function SearchInput({ className, children }: ISearchInputProps) {
     return (
         <div
-            className={`rounded-xl focus-within:gradation-color overflow-hidden bg-[#e5e7eb] p-[3px] ${className}`}
+            className={`rounded-xl focus-within:gradation-color overflow-hidden bg-[#e5e7eb] p-[2px] ${className}`}
         >
-            <div className="flex items-center justify-between w-full h-full p-2 rounded-[.562rem] focus-within:border-none bg-M-white">
+            <div className="flex items-center justify-between w-full h-full p-2 rounded-[.625rem] focus-within:border-none bg-M-white">
                 <input
                     className="flex-auto bg-transparent focus:outline-none"
                     type="text"

@@ -22,7 +22,7 @@ export default function ArtistItem({ className, isSubscribed, src }: IArtistItem
             onClick={() => !isSubscribed && navigate("/subscribe/123")}
         >
             <ProfileImg className={`w-full`} isSubscribed={isSubscribed} src={src} />
-            <span>ArtistName</span>
+            <span>Artist</span>
         </div>
     );
 }

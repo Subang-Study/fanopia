@@ -15,7 +15,7 @@ export default function Button({ className, btnType, onClick, children }: IProps
             "bg-transparent border-2 border-M-pink text-M-pink transition-color duration-300 hover:bg-M-pink hover:text-M-white",
         "empty-blue":
             "bg-transparent border-2 border-M-blue text-M-blue transition-color duration-300 hover:bg-M-blue hover:text-M-white",
-        "fill-gray": "bg-[#EBEBEB] text-[#C6C6C6]",
+        "fill-gray": "bg-[#EBEBEB] text-M-Gray",
     };
 
     return (
