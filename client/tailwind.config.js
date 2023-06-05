@@ -8,6 +8,7 @@ module.exports = {
                 "M-pink": "#F4A2AB",
                 "M-black": "#3F3C41",
                 "M-white": "#fffffe",
+                "M-Gray": "#7F7676",
             },
         },
     },

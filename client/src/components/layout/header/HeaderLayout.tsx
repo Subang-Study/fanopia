@@ -8,7 +8,9 @@ const HeaderLayout: React.FC<Props> = props => {
     return (
         <>
             <Header />
-            <Outlet />
+            <div className="px-4 py-1">
+                <Outlet />
+            </div>
         </>
     );
 };
