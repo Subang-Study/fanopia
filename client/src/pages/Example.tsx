@@ -13,8 +13,15 @@ export default function Example() {
             <div className="w-full h-[3.5rem] gradation-color rounded-xl"></div>
             <ProfileImg className="w-20" />
             <CategoryList />
-            <BorderDiv outer="w-20 p-[2px] rounded-xl" inner="rounded-[.625rem] p-2">
-                lkjlkj
+            <BorderDiv
+                outer="w-20 p-[2px] rounded-xl aspect-square"
+                inner="w-full h-full rounded-[.625rem] border-[.125rem] overflow-hidden"
+            >
+                <img
+                    className="w-full  aspect-square"
+                    src="https://picsum.photos/80/120"
+                    alt="img"
+                />
             </BorderDiv>
         </div>
     );

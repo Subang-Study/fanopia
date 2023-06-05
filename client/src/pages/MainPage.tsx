@@ -7,13 +7,11 @@ import { TbSearch } from "react-icons/tb";
 export default function MainPage() {
     return (
         <section>
-            <div className="p-2">
-                <SearchInput className="w-[100%]">
-                    <TbSearch size={"1.5rem"} color="#7F7676"></TbSearch>
-                </SearchInput>
-                <CategoryList />
-            </div>
-            <div className="flex flex-wrap items-center gap-[12.5%] gap-y-2 px-[10%]">
+            <SearchInput className="w-[100%]">
+                <TbSearch size={"1.5rem"} color="#7F7676"></TbSearch>
+            </SearchInput>
+            <CategoryList />
+            <div className="flex flex-wrap items-center gap-[12.5%] gap-y-2 px-[calc(10%-1rem)]">
                 <ArtistItem className="w-1/4" src="https://picsum.photos/80/120" />
                 <ArtistItem className="w-1/4" isSubscribed={true} />
                 <ArtistItem className="w-1/4" />

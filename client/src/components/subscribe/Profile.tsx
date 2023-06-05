@@ -11,10 +11,10 @@ export default function Profile({ src }: IProfileProps) {
     return (
         <BorderDiv
             outer="w-full aspect-square p-[.125rem] rounded-xl"
-            inner="relative overflow-hidden rounded-[.625rem]"
+            inner="relative w-full aspect-square overflow-hidden rounded-[.625rem]"
         >
             <img
-                className="w-full aspect-auto"
+                className={`w-full ${!src && "h-3/4"}`}
                 src={src ? src : UserImgWithBackground}
                 alt=""
                 onError={e => getDefaultSrc(e, UserImgWithBackground)}

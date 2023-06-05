@@ -10,8 +10,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route path="" element={<div>asdf</div>} />
-                    <Route path="main" element={<MainPage />} />
+                    <Route path="" element={<MainPage />} />
                     <Route path="subscribe/:id" element={<Subscribe />} />
                 </Route>
                 <Route path="/example" element={<Example />} />
